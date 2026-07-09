@@ -6,7 +6,7 @@ function About() {
             <div className={styles.text}>
                 <p className={styles.eyebrow}>Our Flavor</p>
 
-                <h2>Peruvian Filipinoinspired, made downtown friendly.</h2>
+                <h2>Peruvian-Filipino inspired, made downtown friendly.</h2>
 
                 <p>
                     A cozy neighborhood café inspired by Peruvian flavor,
