@@ -1,0 +1,37 @@
+.footer {
+    padding: 42px 7%;
+    background-color: var(--deep-brown);
+    color: var(--soft-cream);
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer h2 {
+    margin: 0 0 8px;
+    color: var(--brews-yellow);
+}
+
+.footer p {
+    margin: 0;
+    color: rgba(255, 248, 236, 0.78);
+}
+
+.links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    font-weight: 800;
+}
+
+.links a:hover {
+    color: var(--brews-yellow);
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

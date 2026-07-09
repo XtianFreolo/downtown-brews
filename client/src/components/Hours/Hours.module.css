@@ -1,0 +1,77 @@
+.hours {
+    padding: 90px 7%;
+    background:
+        radial-gradient(circle at 8% 20%, rgba(246, 168, 0, 0.18), transparent 24%),
+        var(--cream-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--accent-brown);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hours h2 {
+    color: var(--deep-brown);
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1;
+    margin: 0;
+}
+
+.note {
+    color: var(--medium-brown);
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.hoursCard {
+    background-color: var(--soft-cream);
+    border: 1px solid var(--border-soft);
+    border-radius: 30px;
+    padding: 28px;
+    box-shadow: 0 16px 42px rgba(43, 22, 8, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--medium-brown);
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row span,
+.row strong {
+    font-size: 17px;
+}
+
+.row strong {
+    color: var(--deep-brown);
+    text-align: right;
+}
+
+@media (max-width: 850px) {
+    .hours {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .row strong {
+        text-align: left;
+    }
+}
