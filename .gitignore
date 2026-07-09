@@ -1,0 +1,10 @@
+node_modules
+.env
+dist
+.DS_STore
+cat > .gitignore << 'EOF'
+node_modules
+.env
+dist
+.DS_STore
+coverage
