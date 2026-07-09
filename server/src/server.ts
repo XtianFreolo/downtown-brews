@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import pool from "./config/db";
 
 dotenv.config();
 
@@ -21,7 +22,25 @@ app.get("/api/health", (req, res) => {
     });
 });
 
+app.get("/api/db-test", async (req, res) => {
+    try {
+        const result = await pool.query("SELECT NOW()");
+
+        res.json({
+            status: "ok",
+            message: "Database connected",
+            databaseTime: result.rows[0].now,
+        });
+    } catch (error) {
+        console.error("Database connection failed:", error);
+
+        res.status(500).json({
+            status: "error",
+            message: "Database connection failed",
+        });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
