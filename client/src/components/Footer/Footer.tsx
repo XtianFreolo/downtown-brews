@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -5,14 +6,14 @@ function Footer() {
         <footer className={styles.footer}>
             <div>
                 <h2>Downtown Brews</h2>
-                <p>Peruvian Filipino inspired cafe, beer, and wine. Tara na!</p>
+                <p>Peruvian Filipino inspired cafe, beer, and wine.</p>
             </div>
 
             <div className={styles.links}>
-                <a href="#menu">Menu</a>
-                <a href="#beer-wine">Beer & Wine</a>
-                <a href="#about">About</a>
-                <a href="#hours">Hours</a>
+                <Link to="/menu">Menu</Link>
+                <Link to="/beer-wine">Beer & Wine</Link>
+                <a href="/#about">About</a>
+                <a href="/#hours">Hours</a>
             </div>
         </footer>
     );

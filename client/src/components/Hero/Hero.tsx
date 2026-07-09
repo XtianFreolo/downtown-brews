@@ -14,11 +14,11 @@ function Hero() {
                 </p>
 
                 <div className={styles.actions}>
-                    <a href="#menu" className={styles.primaryButton}>
+                    <a href="/menu" className={styles.primaryButton}>
                         View Featured Menu
                     </a>
 
-                    <a href="#beer-wine" className={styles.secondaryButton}>
+                    <a href="/beer-wine" className={styles.secondaryButton}>
                         Beer & Wine
                     </a>
                 </div>

@@ -1,0 +1,29 @@
+.page {
+    min-height: 100vh;
+    background-color: var(--cream-bg);
+}
+
+.main {
+    padding: 100px 7%;
+    min-height: 70vh;
+}
+
+.eyebrow {
+    color: var(--accent-brown);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main h1 {
+    color: var(--deep-brown);
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 0.95;
+    margin: 0;
+}
+
+.main p {
+    color: var(--medium-brown);
+    font-size: 20px;
+    line-height: 1.7;
+}

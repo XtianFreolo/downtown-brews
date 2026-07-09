@@ -13,6 +13,10 @@
   background-color: var(--cream-bg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
