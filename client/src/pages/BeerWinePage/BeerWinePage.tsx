@@ -19,7 +19,7 @@ function BeerWinePage() {
                     </div>
 
                     <div className={styles.imageCard}>
-                        <img src="/images/red-horse.png" alt="Red Horse beer bottle" />
+                        <img src="/images/red-horse.jpg" alt="Red Horse beer bottle" />
                     </div>
                 </section>
 
@@ -49,4 +49,4 @@ function BeerWinePage() {
     );
 }
 
-export default BeerWinePage;
+export default BeerWinePage

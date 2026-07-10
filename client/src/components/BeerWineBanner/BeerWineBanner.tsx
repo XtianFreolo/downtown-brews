@@ -16,7 +16,7 @@ function BeerWineBanner() {
 
                 <div className={styles.imageWrap}>
                     <img src="/images/bar.jpg" alt="Beer and wine bar" className={styles.barImage} />
-                    <img src="/images/red-horse.png" alt="Red Horse beer bottle" className={styles.bottleImage} />
+                    <img src="/images/red-horse.jpg" alt="Red Horse beer bottle" className={styles.bottleImage} />
                 </div>
             </a>
         </section>

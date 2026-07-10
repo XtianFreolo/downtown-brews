@@ -1,6 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { featuredMenuItems } from "../../data/menuItems";
 import styles from "./MenuPage.module.css";
 
 function MenuPage() {
@@ -9,25 +8,28 @@ function MenuPage() {
             <Navbar />
 
             <main className={styles.main}>
-                <p className={styles.eyebrow}>Explore More</p>
-                <h1>Full Downtown Brews Menu</h1>
-                <p className={styles.intro}>
-                    Start with our featured favorites, then expand into coffee, ceviches,
-                    causas, shareables, sweets, beer, wine, and more.
-                </p>
-
-                <section className={styles.grid}>
-                    {featuredMenuItems.map((item) => (
-                        <article className={styles.card} key={item.id}>
-                            <img src={item.image} alt={item.title} />
-                            <div>
-                                <span>{item.category}</span>
-                                <h2>{item.title}</h2>
-                                <p>{item.description}</p>
-                            </div>
-                        </article>
-                    ))}
+                <section className={styles.header}>
+                    <p className={styles.eyebrow}>Explore More</p>
+                    <h1>Downtown Brews Menu</h1>
+                    <p>
+                        View our current menu below. The menu can be updated anytime by
+                        replacing the PDF file.
+                    </p>
                 </section>
+
+                <section className={styles.menuViewer}>
+                    <iframe
+                        src="/menu/downtown-brews-menu.pdf"
+                        title="Downtown Brews Menu PDF"
+                        className={styles.pdf}
+                    />
+                </section>
+
+                <div className={styles.actions}>
+                    <a href="/menu/downtown-brews-menu.pdf" className={styles.button} target="_blank">
+                        Open Menu PDF
+                    </a>
+                </div>
             </main>
 
             <Footer />

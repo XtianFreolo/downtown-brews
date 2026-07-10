@@ -78,16 +78,6 @@ h1 {
     object-fit: cover;
 }
 
-.badge {
-    position: absolute;
-    left: 22px;
-    bottom: 22px;
-    background-color: var(--brews-yellow);
-    color: var(--deep-brown);
-    padding: 12px 18px;
-    border-radius: 999px;
-    font-weight: 900;
-}
 
 @media (max-width: 900px) {
     .hero {

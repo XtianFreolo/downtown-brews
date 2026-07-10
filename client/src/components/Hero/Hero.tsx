@@ -26,7 +26,6 @@ function Hero() {
 
             <div className={styles.imageCard}>
                 <img src="/images/coffee-hero.jpg" alt="Coffee and cafe table" />
-                <div className={styles.badge}>Now serving beer & wine</div>
             </div>
         </section>
     );
