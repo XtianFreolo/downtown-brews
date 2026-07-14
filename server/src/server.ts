@@ -3,6 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import pool from "./config/db";
 import menuRoutes from "./routes/menuRoutes";
+import contactRoutes from "./routes/contactRoutes";
+
 
 dotenv.config();
 
@@ -12,7 +14,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+
 app.use("/api/menu", menuRoutes);
+app.use("/api/contact", contactRoutes);
 
 app.get("/", (req, res) => {
     res.send("Downtown Brews API is running");

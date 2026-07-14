@@ -8,3 +8,6 @@ node_modules
 dist
 .DS_STore
 coverage
+
+# Windows download metadata
+*Zone.Identifier*
